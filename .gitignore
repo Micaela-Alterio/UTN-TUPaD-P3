@@ -1,0 +1,15 @@
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# Extensiones comunes (como Java o Python)
+bin/
+out/
+.project
+.classpath
+.settings/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
