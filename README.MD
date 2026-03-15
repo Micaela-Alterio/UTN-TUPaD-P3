@@ -6,7 +6,7 @@
 ## ✨ Estudiante
 
 * **Nombre:** Alterio, Micaela
-* **Comisión:** Ag25-2C 07
+* **Comisión:** Mar26-3C 07
 
 ## 📂 Descripción del Repositorio
 
