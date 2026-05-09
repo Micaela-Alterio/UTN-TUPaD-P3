@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Panel de Administración</h1>
+        <a href="index.html">Volver a la tienda</a>
+    </header>
+    <br>
+    <table style="border-collapse: collapse" border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td><img src="Assets\burritos.jpg" alt="Plato de Burritos"
+                    width="50px"/></td>
+                <td>Burrito Tex</td>
+                <td>Burritos</td>
+                <td>$6000</td>
+                <td>24</td>
+                <td><a href="#">Editar </a><a href="#"><br>Eliminar </a></td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td><img src="Assets\chilaquiles.jpg" alt="Plato de chilaquiles"
+                    width="50px"/></td>
+                <td>Chilaquiles verdes</td>
+                <td>Chilaquiles</td>
+                <td>$15000</td>
+                <td>20</td>
+                <td><a href="#">Editar</a><a href="#"><br>Eliminar</a></td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td><img src="Assets\gorditas.jpg" alt="Plato de gorditas"
+                    width="50px"/></td>
+                <td>Gorditas Puebla</td>
+                <td>Gorditas</td>
+                <td>$10000</td>
+                <td>15</td>
+                <td><a href="#">Editar</a><a href="#"><br>Eliminar</a></td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td><img src="Assets\tacos.jpg" alt="Plato de tacos"
+                    width="50px"/></td>
+                <td>Tacos Yucatán</td>
+                <td>Tacos</td>
+                <td>$12000</td>
+                <td>38</td>
+                <td><a href="#">Editar</a><a href="#"><br>Eliminar</a></td>
+            </tr>
+            <tr>
+                <td>005</td>
+                <td><img src="Assets\tamales.jpg" alt="Plato de tamales"
+                    width="50px"/></td>
+                <td>Tamales Vallarta</td>
+                <td>Tamales</td>
+                <td>$8000</td>
+                <td>30</td>
+                <td><a href="#">Editar</a><a href="#"><br>Eliminar</a></td>
+            </tr>
+            <tr>
+                <td>006</td>
+                <td><img src="Assets\quesadillas.jpg" alt="Plato de quesadillas"
+                    width="50px"/></td>
+                <td>Quesadillas Norteñas</td>
+                <td>Quesadillas</td>
+                <td>$7000</td>
+                <td>50</td>
+                <td><a href="#">Editar</a><a href="#"><br>Eliminar</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <form>
+        <fieldset style="width: fit-content;">
+                <legend>Agregar producto rápido</legend>
+
+                <label for="nombre">Nombre del producto:</label><br>
+                <input type="text" id="nombre" name="nombre"
+                placeholder="Ej: Burrito Tex" required
+                title="Solo letras, minimo 3 caracteres"><br><br>
+
+                 <label for="precio">Precio del producto:</label><br>
+                <input type="number" id="precio" name="precio"
+                placeholder="Ej $6000"><br><br>
+
+                <label for="stock">Stock inicial:</label><br>
+                <input type="number" id="stock" name="stock"
+                placeholder="Ej 20"><br><br>
+
+                <label for="categ">Categoría del producto:</label><br>
+                    <select id="categ" name="categ" required>
+                        <option value="">Seleccione una opción...</option>
+                        <option value="burritos">Burritos</option>
+                        <option value="chilaquiles">Chilaquiles</option>
+                        <option value="gorditas">Gorditas</option>
+                        <option value="tacos">Tacos</option>
+                        <option value="tamales">Tamales</option>
+                        <option value="quesadillas">Quesadillas</option>
+                    </select><br><br>
+
+                <legend>Descripción</legend>
+                    <textarea id="desc" name="desc" rows="4" cols="40" required
+                        placeholder="Ingrese los ingredientes...">
+                    </textarea>
+                <br>
+                <button type="submit">Guardar producto</button>
+        </fieldset>
+    </form>
+    <footer>
+        <p>Panel de Administración - Veggie Food Store v1.0</p>
+    </footer>
+</body>
+</html>
