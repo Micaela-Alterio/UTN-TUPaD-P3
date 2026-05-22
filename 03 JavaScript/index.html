@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veggie Food Store</title>
+</head>
+<body>
+    <header>
+        <h1>Veggie Food Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Mis pedidos</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="admin.html">Panel admin</a></li>
+            </ul>
+        </nav>    
+    </header>
+    <hr>
+    <aside>
+        <h2>Categorías</h2>
+        <ul id="listaCategorias"></ul>
+    </aside>
+    <main>
+        <form>
+            <label for="buscarProducto">Buscar productos</label>
+            <input id="buscarProducto" type="text" placeholder="Ej: Tacos"/>
+            <button type="submit">Buscar</button>
+        </form>
+        <h2>Productos destacados</h2>
+        <section id="contenedorProductos"></section>
+    </main>
+
+    <footer><p>&copy; 2026 Veggie Food Store</p>
+    <p>Contacto: <a href="#">info@veggiefoodstore.com</a></p>
+    </footer>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
