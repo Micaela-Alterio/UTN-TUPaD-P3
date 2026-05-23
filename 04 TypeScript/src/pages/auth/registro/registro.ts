@@ -26,12 +26,12 @@ if (formRegistro) {
         }
 
         //Se crea el nuevo usuario con rol 'client' por defecto y un ID único
-        const nuevoUsuario: IUser = {
+        const nuevoUsuario = {
             id: crypto.randomUUID(), 
             email: email,
             password: password,
             role: 'client' as Rol
-        };
+        }as any;
 
         //Persistencia de la lista actualizada en localStorage
         listaUsuarios.push(nuevoUsuario);
