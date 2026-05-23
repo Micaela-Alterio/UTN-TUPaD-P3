@@ -1,0 +1,154 @@
+:root{
+    --color-primario: #ff6347;
+    --color-primario-fondo: #f3fec2;
+    --color-fondo: #f0f0f0;
+    --color-texto: #333;
+    --color-blanco: #fff;
+    --color-borde: #ddd;
+    --color-focus: #ff4500;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--color-fondo);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-blanco);
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px; 
+}
+.logo{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+.login-form h1{
+    font-family: Arial, sans-serif;
+    color: var(--color-primario);
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.login-form h2{
+    font-family: Arial, sans-serif;
+    color: var(--color-texto);
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+label{
+    font-family: Arial, sans-serif;
+    color: var(--color-texto);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 10px;
+    border: 2px solid var(--color-borde);
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: var(--color-blanco);
+    font-family: Arial, sans-serif;
+}
+
+input:focus, select:focus{
+    outline: none;
+    border-color: var(--color-focus);
+}
+button{
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--color-focus);
+}
+.registro{
+    font-family: Arial, sans-serif;
+    color: var(--color-texto);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+}
+.registro a{
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: bold;
+}
+.registro a:hover{
+    color: var(--color-focus);
+}
+
+/* --- ESTILOS PARA LAS vistas DE CLIENTE Y ADMIN --- */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+.dashboard-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    background-color: var(--color-blanco);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.05);
+    border-bottom: 2px solid var(--color-borde);
+    width: 100%;
+}
+
+.dashboard-title {
+    font-family: Arial, sans-serif;
+    color: var(--color-texto);
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+.dashboard-header .logo {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-logout {
+    justify-self: end;
+    background-color: var(--color-primario);
+    white-space: nowrap;
+    padding: 8px 16px;
+    width: auto;
+    margin-top: 5px;
+}
